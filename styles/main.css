@@ -1,15 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 
-html {
-    scroll-behavior: smooth;
+@font-face {
+<<<<<<< HEAD
+  font-family: planet;
+  src: url(../fonts/planet.ttf);
+  font-weight: normal;
+  font-style: normal;
+  font-size: 48px;
 }
 
+html,
 body {
+  margin: 0;
+  scroll-behavior: smooth;
+  background-color: black;
+  color: white;
+  max-width: 100%;
+  overflow-x: hidden;
+=======
+    font-family: planet;
+    src: url(../fonts/planet.ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-size: 48px;
+}
+
+html, body {
+    margin: 0;
+    scroll-behavior: smooth;
     background-color: black;
     color: white;
+    max-width: 100%;
+    overflow-x: hidden;
+>>>>>>> main
 }
 
+
 header {
+<<<<<<< HEAD
+  background-color: black;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+}
+
+footer {
+  width: 100vw;
+  display: block;
+  overflow: hidden;
+  padding: 70px 0;
+  box-sizing: border-box;
+  background-color: blue;
+}
+
+p {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.185em;
+=======
     background-color: black;
     color: white;
     font-family: 'Mulish', sans-serif;
@@ -21,7 +77,7 @@ header {
     padding: 10px 5%;
 }
 
-p{
+p {
     font-family: 'Mulish', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -29,36 +85,163 @@ p{
     line-height: 23px;
     letter-spacing: 0.185em;
     text-transform: lowercase;
+>>>>>>> main
 }
+
 
 /* Navbar */
 
 .logo-nav {
+<<<<<<< HEAD
+  cursor: pointer;
+=======
     cursor: pointer;
-    
+>>>>>>> main
 }
 
 .nav__links {
-    list-style: none;
-    text-decoration: none;
+  list-style: none;
+  text-decoration: none;
 }
 
 .nav__links li {
-    display: inline-block;
-    padding: 0px 20px;
+  display: inline-block;
+  padding: 0px 20px;
 }
 
 .nav__links li a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 /* Hero */
 
-#chan_hero {
+<<<<<<< HEAD
+#hero {
+  position: relative;
+  top: 50px;
+}
+
+.hero__chan {
+  position: relative;
+  height: 750px;
+  left: 100px;
+  top: 15px;
+}
+
+.hero__logo {
+  position: relative;
+  left: 460px;
+  top: -350px;
+  width: 1024px;
+}
+
+.hero__text {
+  position: relative;
+  width: 818px;
+  height: 67px;
+  left: 900px;
+  top: -330px;
+}
+
+.boton__verdesigns {
+  position: relative;
+  display: grid;
+  height: 50px;
+  width: 150px;
+  background-color: white;
+  place-items: center;
+  font-family: "Mulish", sans-serif;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.185em;
+  text-decoration: none;
+  border-radius: 7px;
+  position: relative;
+  top: -300px;
+  left: 900px;
+}
+
+/* Nosotros */
+
+#nosotros {
+}
+
+/* Contacto */
+
+#contacto {
+  position: relative;
+  top: 2048px;
+}
+
+/* Footer */
+
+.footer {
+  display: block;
+  margin: 0 auto;
+  width: 1440px;
+  height: 100%;
+}
+
+/* Titulos (h2) */
+
+h2 {
+  font-family: planet;
+  font-size: 48px;
+  letter-spacing: 2px;
+=======
+.hero__chan {
     position: absolute;
-    height: 787px;
-    left: 64px;
-    top: 119px;
+    height: 800px;
+    left: 100px;
+    top: 130px;
 
 }
+
+.hero__text {
+    position: absolute;
+    width: 818px;
+    height: 67px;
+    left: 900px;
+    top: 552px;
+}
+
+.hero__logo {
+    position: absolute;
+    left: 700px;
+    top: 200px;
+    width: 1024px;
+>>>>>>> main
+}
+
+.boton__verdesigns {
+    position: absolute;
+    display: grid;
+    height: 50px;
+    width: 150px;
+    background-color: white;
+    place-items: center;
+    font-family: 'Mulish', sans-serif;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.185em;
+    text-decoration: none;
+    border-radius: 7px;
+    position: absolute;
+    top: 680px;
+    right: 815px;
+
+
+}
+
+/* Titulos (h2) */
+
+h2 {
+    font-family: planet;
+    font-size: 48px;
+    letter-spacing: 2px;
+
+}
+
