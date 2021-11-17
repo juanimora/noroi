@@ -1,13 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
-html {
-    scroll-behavior: smooth;
+@font-face {
+    font-family: planet;
+    src: url(../fonts/planet.ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-size: 48px;
 }
 
-body {
+html, body {
+    margin: 0;
+    scroll-behavior: smooth;
     background-color: black;
     color: white;
+    max-width: 100%;
+    overflow-x: hidden;
 }
+
 
 header {
     background-color: black;
@@ -21,7 +30,7 @@ header {
     padding: 10px 5%;
 }
 
-p{
+p {
     font-family: 'Mulish', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -31,11 +40,11 @@ p{
     text-transform: lowercase;
 }
 
+
 /* Navbar */
 
 .logo-nav {
     cursor: pointer;
-    
 }
 
 .nav__links {
@@ -55,10 +64,56 @@ p{
 
 /* Hero */
 
-#chan_hero {
+.hero__chan {
     position: absolute;
-    height: 787px;
-    left: 64px;
-    top: 119px;
+    height: 800px;
+    left: 100px;
+    top: 130px;
 
 }
+
+.hero__text {
+    position: absolute;
+    width: 818px;
+    height: 67px;
+    left: 900px;
+    top: 552px;
+}
+
+.hero__logo {
+    position: absolute;
+    left: 700px;
+    top: 200px;
+    width: 1024px;
+}
+
+.boton__verdesigns {
+    position: absolute;
+    display: grid;
+    height: 50px;
+    width: 150px;
+    background-color: white;
+    place-items: center;
+    font-family: 'Mulish', sans-serif;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.185em;
+    text-decoration: none;
+    border-radius: 7px;
+    position: absolute;
+    top: 680px;
+    right: 815px;
+
+
+}
+
+/* Titulos (h2) */
+
+h2 {
+    font-family: planet;
+    font-size: 48px;
+    letter-spacing: 2px;
+
+}
+
