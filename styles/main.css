@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-color: black;
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+}
+
+p{
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.185em;
+    text-transform: lowercase;
+}
+
+/* Navbar */
+
+.logo-nav {
+    cursor: pointer;
+    
+}
+
+.nav__links {
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Hero */
+
+#chan_hero {
+    position: absolute;
+    height: 787px;
+    left: 64px;
+    top: 119px;
+
+}
