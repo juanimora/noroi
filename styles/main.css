@@ -1,120 +1,109 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 
 @font-face {
-  font-family: planet;
-  src: url(../fonts/planet.ttf);
-  font-weight: normal;
-  font-style: normal;
-  font-size: 48px;
+	font-family: planet;
+	src: url(../fonts/planet.ttf);
+	font-weight: normal;
+	font-style: normal;
+	font-size: 48px;
 }
 
 html,
 body {
-  margin: 0;
-  scroll-behavior: smooth;
-  background-color: black;
-  color: white;
-  max-width: 100%;
-  overflow-x: hidden;
+	margin: 0;
+	scroll-behavior: smooth;
+	background-color: black;
+	color: white;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 header {
-  background-color: black;
-  color: white;
-  font-family: "Mulish", sans-serif;
-  font-size: 16px;
-  text-decoration: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 5%;
+	background-color: black;
+	color: white;
+	font-family: "Mulish", sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 5%;
 }
 
 footer {
-  width: 100vw;
-  display: block;
-  overflow: hidden;
-  padding: 70px 0;
-  box-sizing: border-box;
-  background-color: blue;
+	width: 100vw;
+	display: block;
+	overflow: hidden;
+	padding: 70px 0;
+	box-sizing: border-box;
 }
 
 p {
-  font-family: "Mulish", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 23px;
-  letter-spacing: 0.185em;
+	font-family: "Mulish", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 23px;
+	letter-spacing: 0.185em;
 }
 
 /* Navbar */
 
 .logo-nav {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .nav__links {
-  list-style: none;
-  text-decoration: none;
+	list-style: none;
+	text-decoration: none;
 }
 
 .nav__links li {
-  display: inline-block;
-  padding: 0px 20px;
+	display: inline-block;
+	padding: 0px 20px;
 }
 
 .nav__links li a {
-  text-decoration: none;
-  color: white;
+	text-decoration: none;
+	color: white;
 }
 
 /* Hero */
 
 #hero {
-  position: relative;
-  top: 20px;
+	top: 20px;
 }
 
 .hero__chan {
-  position: relative;
-  height: 750px;
-  left: 100px;
-  top: 15px;
+	height: 750px;
+	top: 15px;
 }
 
 .hero__logo {
-  position: relative;
-  left: 460px;
-  top: -350px;
-  width: 1024px;
+	top: -350px;
+	width: 1024px;
 }
 
 .hero__text {
-  position: relative;
-  width: 818px;
-  height: 67px;
-  left: 900px;
-  top: -330px;
+	width: 818px;
+	height: 67px;
 }
 
 .boton__verdesigns {
-  position: relative;
-  display: grid;
-  height: 50px;
-  width: 150px;
-  background-color: white;
-  place-items: center;
-  font-family: "Mulish", sans-serif;
-  color: black;
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 0.185em;
-  text-decoration: none;
-  border-radius: 7px;
-  position: relative;
-  top: -300px;
-  left: 900px;
+	display: grid;
+	height: 50px;
+	width: 150px;
+	background-color: white;
+	place-items: center;
+	font-family: "Mulish", sans-serif;
+	color: black;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 0.185em;
+	text-decoration: none;
+	border-radius: 7px;
+	top: -300px;
+	left: 900px;
 }
 
 /* Nosotros */
@@ -125,23 +114,21 @@ p {
 /* Contacto */
 
 #contacto {
-  position: relative;
-  top: 2048px;
 }
 
 /* Footer */
 
 .footer {
-  display: block;
-  margin: 0 auto;
-  width: 1440px;
-  height: 100%;
+	display: block;
+	margin: 0 auto;
+	width: 1440px;
+	height: 100%;
 }
 
 /* Titulos (h2) */
 
 h2 {
-  font-family: planet;
-  font-size: 48px;
-  letter-spacing: 2px;
+	font-family: planet;
+	font-size: 48px;
+	letter-spacing: 2px;
 }
