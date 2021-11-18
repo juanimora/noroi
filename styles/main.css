@@ -109,11 +109,13 @@ p {
 /* Nosotros */
 
 #nosotros {
+	margin: auto;
 }
 
 /* Contacto */
 
 #contacto {
+	margin: auto;
 }
 
 /* Footer */
