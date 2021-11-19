@@ -31,11 +31,9 @@ header {
 }
 
 footer {
-	width: 100vw;
-	display: block;
-	overflow: hidden;
-	padding: 70px 0;
-	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
 }
 
 p {
@@ -45,6 +43,13 @@ p {
 	font-size: 18px;
 	line-height: 23px;
 	letter-spacing: 0.185em;
+}
+
+.scroll_to_top {
+	position: fixed;
+	width: 70px;
+	bottom: 20px;
+	right: 20px;
 }
 
 /* Navbar */
@@ -79,9 +84,9 @@ p {
 	top: 15px;
 }
 
-.hero__logo {
-	top: -350px;
+#hero .hero__logo {
 	width: 1024px;
+	vertical-align: top;
 }
 
 .hero__text {
@@ -120,11 +125,24 @@ p {
 
 /* Footer */
 
-.footer {
-	display: block;
-	margin: 0 auto;
-	width: 1440px;
-	height: 100%;
+.footer__text--container {
+	display: flex;
+	justify-content: center;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.footer__text {
+	font-size: 12px;
+}
+
+.footer__img {
+	width: 40px;
+}
+
+.footer__links li {
+	display: inline;
+	list-style: none;
 }
 
 /* Titulos (h2) */
