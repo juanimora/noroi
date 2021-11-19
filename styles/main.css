@@ -84,9 +84,12 @@ p {
 	top: 15px;
 }
 
-#hero .hero__logo {
+.hero__logo {
 	width: 1024px;
 	vertical-align: top;
+	position: relative;
+	left: 500px;
+	top: 100px;
 }
 
 .hero__text {
