@@ -146,8 +146,50 @@ h3 {
 /* Nosotros */
 
 #nosotros {
-	margin: auto;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
+
+.nosotros__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.nosotros__textcontainer {
+	margin-right: 9%;
+}
+
+.nosotros__text {
+	width: 31em;
+	height: 7em;
+}
+
+.nosotros__chan {
+	height: 55em;
+}
+
+/* .nosotros__text {
+	width: 51em;
+	height: 3em;
+}
+
+.nosotros__chan {
+	height: 50em;
+}
+
+.nosotros__textcontainer {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.nosotros__chancontainer {
+	display: inline-block;
+	vertical-align: middle;
+} */
 
 /* Contacto */
 
