@@ -151,6 +151,7 @@ h3 {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	background-color: #090909;
 }
 
 .nosotros__container {
@@ -172,7 +173,8 @@ h3 {
 	height: 55em;
 }
 
-/* .nosotros__text {
+/* 
+.nosotros__text {
 	width: 51em;
 	height: 3em;
 }
