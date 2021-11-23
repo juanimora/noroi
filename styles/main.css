@@ -5,7 +5,7 @@
 	src: url(../fonts/planet.ttf);
 	font-weight: normal;
 	font-style: normal;
-	font-size: 48px;
+	font-size: 3em;
 }
 
 html,
@@ -22,26 +22,24 @@ header {
 	background-color: black;
 	color: white;
 	font-family: "Mulish", sans-serif;
-	font-size: 16px;
+	font-size: 1em;
 	text-decoration: none;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 10px 5%;
+	padding: 1% 5%;
 }
 
 footer {
 	display: flex;
 	justify-content: space-between;
-	padding: 15px;
 }
 
 p {
 	font-family: "Mulish", sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 18px;
-	line-height: 23px;
+	font-size: 1em;
 	letter-spacing: 0.185em;
 }
 
@@ -50,6 +48,20 @@ p {
 	width: 70px;
 	bottom: 20px;
 	right: 20px;
+}
+
+/* Titulos (h2) */
+
+h2 {
+	font-family: planet;
+	font-size: 3em;
+	letter-spacing: 0.05em;
+}
+
+h3 {
+	display: flex;
+	justify-content: center;
+	font-family: Mulish;
 }
 
 /* Navbar */
@@ -65,7 +77,7 @@ p {
 
 .nav__links li {
 	display: inline-block;
-	padding: 0px 20px;
+	padding: 0 4em 0 0;
 }
 
 .nav__links li a {
@@ -74,44 +86,61 @@ p {
 }
 
 /* Hero */
-
 #hero {
-	top: 20px;
+	margin-top: 3%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.hero {
+	display: flex;
+	justify-content: space-around;
 }
 
 .hero__chan {
-	height: 750px;
-	top: 15px;
+	height: 48em;
 }
 
 .hero__logo {
-	width: 1024px;
-	vertical-align: top;
-	position: relative;
-	left: 500px;
-	top: 100px;
+	width: 60em;
 }
 
 .hero__text {
-	width: 818px;
-	height: 67px;
+	margin-left: 15%;
+	width: 51em;
+	height: 3em;
 }
 
 .boton__verdesigns {
+	margin-left: 15%;
+	margin-top: 2%;
 	display: grid;
-	height: 50px;
-	width: 150px;
-	background-color: white;
+	height: 3em;
+	width: 10em;
+	background-color: #ffffff;
 	place-items: center;
 	font-family: "Mulish", sans-serif;
-	color: black;
-	font-size: 16px;
+	color: #000000;
+	font-size: 1em;
 	font-weight: bold;
 	letter-spacing: 0.185em;
 	text-decoration: none;
-	border-radius: 7px;
-	top: -300px;
-	left: 900px;
+	border-radius: 0.438em;
+	-webkit-transition: 0.3s all ease-in;
+	transition: 0.3s all ease-in;
+}
+
+.boton__verdesigns:hover {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.hero__logotext {
+	display: flex;
+	justify-content: right;
+	flex-direction: column;
+	margin-top: 4%;
 }
 
 /* Nosotros */
@@ -128,30 +157,21 @@ p {
 
 /* Footer */
 
-.footer__text--container {
+/* Designs */
+
+.designs__titulo {
 	display: flex;
 	justify-content: center;
-	margin-left: 20px;
-	margin-right: 20px;
 }
 
-.footer__text {
-	font-size: 12px;
+.designs__rowtop {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
-.footer__img {
-	width: 40px;
-}
-
-.footer__links li {
-	display: inline;
-	list-style: none;
-}
-
-/* Titulos (h2) */
-
-h2 {
-	font-family: planet;
-	font-size: 48px;
-	letter-spacing: 2px;
+.designs__rowbottom {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
