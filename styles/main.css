@@ -30,11 +30,6 @@ header {
 	padding: 1% 5%;
 }
 
-footer {
-	display: flex;
-	justify-content: space-between;
-}
-
 p {
 	font-family: "Mulish", sans-serif;
 	font-style: normal;
@@ -115,23 +110,33 @@ h3 {
 .boton__verdesigns {
 	margin-left: 15%;
 	margin-top: 2%;
-	display: grid;
 	height: 3em;
 	width: 10em;
-	background-color: #ffffff;
-	place-items: center;
-	font-family: "Mulish", sans-serif;
-	color: #000000;
-	font-size: 1em;
+	text-align: center;
+	justify-content: center;
 	font-weight: bold;
-	letter-spacing: 0.185em;
+	outline: none;
+	display: flex;
+	flex-direction: column;
 	text-decoration: none;
-	border-radius: 0.438em;
-	-webkit-transition: 0.3s all ease-in;
-	transition: 0.3s all ease-in;
+	border: solid 1px;
+	font-size: 1em;
+	line-height: 1;
+	border-radius: 7px;
+	background-color: #000000;
+	color: #ffffff;
+	cursor: pointer;
+	transition: all 0.3s linear;
+	font-family: "Mulish", sans-serif;
 }
 
-.boton__verdesigns:hover {
+.boton__verdesigns:hover,
+.boton__verdesigns:focus {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.boton__verdesigns:active {
 	background-color: #000000;
 	color: #ffffff;
 }
@@ -173,26 +178,6 @@ h3 {
 	height: 55em;
 }
 
-/* 
-.nosotros__text {
-	width: 51em;
-	height: 3em;
-}
-
-.nosotros__chan {
-	height: 50em;
-}
-
-.nosotros__textcontainer {
-	display: inline-block;
-	vertical-align: middle;
-}
-
-.nosotros__chancontainer {
-	display: inline-block;
-	vertical-align: middle;
-} */
-
 /* Contacto */
 
 #contacto {
@@ -200,6 +185,38 @@ h3 {
 }
 
 /* Footer */
+
+footer {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	background-color: #090909;
+	font-family: "Mulish", sans-serif;
+}
+
+.footer__text--container {
+	margin-right: auto;
+}
+.footer__text--links {
+	margin-right: 0;
+}
+
+.footer__links {
+	list-style: none;
+}
+
+.footer__links li {
+	display: inline-block;
+}
+
+.footer__links li a {
+	text-decoration: none;
+}
+
+.footer__links img {
+	height: 10%;
+	width: 10%;
+}
 
 /* Designs */
 
