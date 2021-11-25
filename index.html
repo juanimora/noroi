@@ -75,19 +75,17 @@
         <!-- Contacto -->
 
         <section id="contacto">
-            <div class="inner__footer">
-                <img id="chan3" src="./img/index-images/chan3.png" alt="noroi-chan" />
-                <form action="">
+            <div class="contacto__chan--container">
+                <img class="contacto__chan" src="./img/index-images/chan3.png" alt="noroi-chan" />
+            </div>
+            <div class="form__container">
+                <form class="contacto__container">
                     <h2 class="contacto__title">Contacto</h2>
-                    <label for="nombre">nombre:</label>
-                    <input type="text" name="nombre" required>
-                    <label for="asunto">asunto:</label>
-                    <input type="text" name="asunto" required>
-                    <label for="e-mail">e-mail:</label>
-                    <input type="email" name="e-mail" required>
-                    <label for="texto">texto:</label>
-                    <input type="text" name="texto" required>
-                    <input type="submit" value="Enviar">
+                    <input class="contacto__texto" type="text" name="nombre" placeholder="Nombre" required>
+                    <input class="contacto__texto" type="email" name="e-mail" placeholder="E-mail" required>
+                    <input class="contacto__texto" type="tel" name="telefono" placeholder="Telefono" required>
+                    <textarea class="contacto__texto textarea" name="mensaje" placeholder="Mensaje" required></textarea>
+                    <input class="contacto__boton" type="submit" value="Enviar">
                 </form>
             </div>
         </section>
@@ -112,7 +110,3 @@
 </body>
 
 </html>
-
-<figure>
-    <figcaption></figcaption>
-</figure>
