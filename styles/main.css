@@ -86,6 +86,8 @@ h3 {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	width: 100vw;
+	height: 100vh;
 }
 
 .hero {
@@ -151,22 +153,18 @@ h3 {
 /* Nosotros */
 
 #nosotros {
-	padding-top: 2%;
-	padding-bottom: 2%;
 	display: flex;
-	justify-content: space-around;
 	flex-wrap: wrap;
-	background-color: #090909;
-}
-
-.nosotros__container {
-	display: flex;
+	justify-content: space-around;
 	align-items: center;
-	justify-content: space-evenly;
+	background-color: #090909;
+	width: 100vw;
+	height: 100vh;
 }
 
 .nosotros__textcontainer {
-	margin-right: 9%;
+	display: flex;
+	flex-direction: column;
 }
 
 .nosotros__text {
@@ -186,7 +184,8 @@ h3 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 }
 
 .contacto__chan--container {
@@ -295,19 +294,16 @@ footer {
 
 /* Designs */
 
+
 .designs__titulo {
 	display: flex;
 	justify-content: center;
 }
 
-.designs__rowtop {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
-
-.designs__rowbottom {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+.grid__remeras {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	justify-items: center;
+	align-items: center;
 }
