@@ -8,18 +8,39 @@
 	font-size: 3em;
 }
 
+// Map
+
+$colores: (
+	"primario": #000000,
+	"secundario": #090909,
+);
+
+// Extend (Agregado en HERO)
+
+%flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+// Mixin (Agregado en NOSOTROS)
+
+@mixin flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 html,
 body {
 	margin: 0;
 	scroll-behavior: smooth;
-	background-color: #000000;
+	background-color: map-get($colores, "primario");
 	color: #ffffff;
 	max-width: 100%;
 	overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
-	background: black;
+	background-color: map-get($colores, "primario");
 	width: 10px;
 }
 
@@ -29,7 +50,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 header {
-	background-color: #000000;
+	background-color: map-get($colores, "primario");
 	color: #ffffff;
 	font-family: "Mulish", sans-serif;
 	font-size: 1em;
@@ -55,7 +76,7 @@ p {
 	right: 20px;
 }
 
-/* Titulos (h2) */
+/* Titulos */
 
 h2 {
 	font-family: planet;
@@ -75,7 +96,6 @@ h3 {
 	--bs-bg-opacity: 0;
 
 	.nav-container {
-		background-color: #000000;
 		padding: 1% 10% 1% 10%;
 
 		.logo-nav {
@@ -87,10 +107,9 @@ h3 {
 /* Hero */
 
 .hero {
+	@extend %flex;
 	margin-top: 3%;
-	display: flex;
 	justify-content: space-around;
-	flex-wrap: wrap;
 
 	&__chan {
 		height: 48em;
@@ -130,7 +149,7 @@ h3 {
 	font-size: 1em;
 	line-height: 1;
 	border-radius: 7px;
-	background-color: #000000;
+	background-color: map-get($colores, "primario");
 	color: #ffffff;
 	cursor: pointer;
 	transition: all 0.3s linear;
@@ -143,7 +162,7 @@ h3 {
 	}
 
 	&:active {
-		background-color: #000000;
+		background-color: map-get($colores, "primario");
 		color: #ffffff;
 	}
 }
@@ -151,11 +170,10 @@ h3 {
 /* Nosotros */
 
 .nosotros {
-	display: flex;
-	flex-wrap: wrap;
+	@include flex;
 	justify-content: space-around;
 	align-items: center;
-	background-color: #090909;
+	background-color: map-get($colores, "secundario");
 
 	&__textcontainer {
 		display: flex;
@@ -249,7 +267,7 @@ h3 {
 /* Footer */
 
 footer {
-	background-color: #070707;
+	background-color: map-get($colores, "secundario");
 }
 
 /* Designs */
